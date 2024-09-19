@@ -1,0 +1,126 @@
+/*---------------------
+  Team
+-----------------------*/
+.team {
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+
+.team__btn {
+    text-align: right;
+}
+
+.team__item {
+    height: 480px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.team__item:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(17, 17, 17, 0.9);
+    content: "";
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.team__item:hover:after {
+    opacity: 1;
+}
+
+.team__text {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 35px 30px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    text-align: left; /* Align text to the left */
+}
+
+.team__item:hover .team__text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.team__text .team__title {
+    padding: 0;
+    transition: all 0.7s ease-out;
+    text-align: left; /* Align title to the left */
+}
+
+.team__text .team__title h5 {
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 6px;
+}
+
+.team__text .team__title span {
+    font-size: 14px;
+    color: #dfa667;
+}
+
+.team__text .team__title hr {
+    margin: 10px 0; /* Adjust spacing around the horizontal line */
+    opacity: 0;
+    transition: all 0.5s ease;
+    background-color: #ffffff; /* White color for the horizontal line */
+    height: 2px; /* Height of the line */
+    border: none;
+}
+
+.team__item:hover .team__title hr {
+    opacity: 1; /* Show the horizontal line on hover */
+}
+
+.team__text p {
+    color: #b7b7b7;
+    margin-top: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+.team__social {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.team__item:hover .team__social {
+    opacity: 1;
+    visibility: visible;
+}
+
+.team__social a {
+    display: inline-block;
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 34px;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.team__social a:last-child {
+    margin-right: 0;
+}
+
+.team__social a:hover {
+    color: #dfa667;
+}
+span{
+    color: white;
+}

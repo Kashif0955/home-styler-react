@@ -1,0 +1,51 @@
+/*--------- start Service Area -------------*/
+
+.service-area {
+    /* background-color: #12151A;  */
+    padding: 50px 0;
+    margin-bottom: 20;
+  }
+  
+  .single-service {
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #12151A !important; /* Card background color */
+    color: #ffffff; /* Default text color */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+  
+  .single-service h4 {
+    margin-bottom: 20px;
+  }
+  
+  .single-service p {
+    margin-bottom: 0;
+    /* color: white !important; */
+  }
+  
+  .single-service:hover {
+    background-color: #12151ae3; /* Keeps the background color same on hover */
+    border-color: #12151ae1; /* Keeps the border color same on hover */
+  }
+  
+  .single-service:hover h4 {
+    color: #ffffff; /* Text color on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .single-service {
+        padding: 22px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .single-service {
+        margin-bottom: 30px;
+    }
+  }
+  
+  /*--------- end Service Area -------------*/

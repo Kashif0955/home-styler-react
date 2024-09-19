@@ -1,0 +1,62 @@
+.professional-services {
+    height: 800px;
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) { /* Assuming #{$md} is 768px */
+    .professional-services {
+        height: 654px;
+    }
+}
+
+.profession-caption {
+    margin-top: -418px;
+}
+
+@media (max-width: 768px) { /* Assuming #{$md} is 768px */
+    .profession-caption {
+        margin-top: -500px;
+    }
+}
+
+@media (max-width: 576px) { /* Assuming #{$sm} is 576px */
+    .profession-caption {
+        margin-top: 0px;
+    }
+
+    .profession-caption .profession-details {
+        padding: 30px;
+    }
+
+    .profession-caption .profession-details h2 {
+        font-size: 23px;
+    }
+
+    .profession-caption .profession-details p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 320px) { /* Assuming #{$xs} is 320px */
+    .profession-caption {
+        margin-top: 0px;
+    }
+
+    .profession-caption .profession-details {
+        padding: 30px;
+    }
+
+    .profession-caption .profession-details h2 {
+        font-size: 23px;
+    }
+
+    .profession-caption .profession-details p {
+        font-size: 17px;
+    }
+}
+
+.body-bg {
+    background: #12151a;
+}

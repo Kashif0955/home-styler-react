@@ -1,0 +1,50 @@
+/*================================================
+Fun Facts Area CSS
+=================================================*/
+
+.fun-facts-area {
+    background-color: #a53d35;
+    background-position: center center;
+    padding: 50px 0; /* Adjust padding as needed */
+    color: #fff; /* Ensure text is readable */
+}
+
+.single-fun-facts {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.single-fun-facts h3 {
+    margin-bottom: 0;
+    color: #f2eded;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.single-fun-facts p {
+    line-height: 1.6; /* Adjust line-height for readability */
+    color: #f2eded;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.single-fun-facts p p {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.single-fun-facts .back-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -68px;
+    z-index: -1;
+    color: #f2eded;
+    font-size: 140px;
+    font-weight: 900;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    text-align: center; /* Center the back text */
+    opacity: 0.2; /* Adjust opacity if needed */
+}
