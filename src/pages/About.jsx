@@ -1,8 +1,488 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Banner from './Banner'
+import '../../public/assets/css/about.css'
 
-const About = () => {
+const About = () => { 
   return (
+
+//     <>
+
+//   <section id="center" className="center_about" >
+    
+//     <div className="center_om">
+//       <div className="container-xl">
+//         <div className="row center_o1">
+//           <div className="col-md-6">
+//             <div className="center_o1l">
+//               <hr className="line_1 mt-0" />
+//               <h1 className="text-white font_60 mb-0">About Company</h1>
+//             </div>
+//           </div>  
+//         </div>
+//       </div>
+//     </div>
+//   </section>
+//   <section id="overview" className="p_3 bg-light">
+//   <div className="container-xl">
+//     <div className="proj_h1 row mb-4">
+//       <div className="col-md-6">
+//         <div className="proj_h1l">
+//           <h6 className="col_red fw-bold">COMPANY OVERVIEW</h6>
+//           <h2 className="mb-0">
+//             MODERN &amp; LUXURY <br />{" "}
+//             <span className="fw-normal">INTERIOR DESIGNERS IN USA</span>
+//           </h2>
+//         </div>
+//       </div>
+//       <div className="col-md-6">
+        
+//       </div>
+//     </div>
+//     <div className="row about_h1">
+//       <div className="col-md-6 p-0">
+//         <div className="overview_l">
+//           <div className="grid clearfix">
+//             <figure className="effect-jazz mb-0">
+//               <a href="#">
+//                 <img src="public/assets/img/team/19.jpg" className="w-100 " alt="abc" />
+//               </a>
+//             </figure>
+//           </div>
+//         </div>
+//       </div>
+//       <div className="col-md-6 p-0">
+//         <div className="overview_r bg-white p-5">
+//           <h4 className="bg_red text-white p-2 px-5 d-inline-block">1988</h4>
+//           <h3 className="mt-3">
+//             Crystalo Was Founded by
+//             <br /> Chris Miller in USA.
+//           </h3>
+//           <p className="mt-3">
+//             Indignation and dislike men who are so beguiled and demoralized by
+//             the charms pleasure of the moment, so blinded by desire, that they
+//             cannot foresee shrinking from toil and pain.
+//           </p>
+//           <h6 className="mb-0 fw-bold mt-4">
+//             <a href="#">
+//               Read More <i className="fa fa-long-arrow-right ms-1" />
+//             </a>
+//           </h6>
+//         </div>
+//       </div>
+//     </div>
+ 
+//   </div>
+// </section>
+
+// <section id="feature" className="p_3">
+//       <div className="container-xl">
+//         <div className="row feature_3">
+//           <div className="col-md-6">
+//             <div className="feature_3r">
+//               <h1 className="mb-4 center_sm">Why We Are Different?</h1>
+//               <div className="feature_3ri row">
+//                 <div className="col-md-1 col-sm-1 pe-0">
+//                   <div className="feature_3ril">
+//                     <span className="fs-2 col_red align-middle">
+//                       <i className="fa fa-home" />
+//                     </span>
+//                   </div>
+//                 </div>
+//                 <div className="col-md-11 col-sm-11">
+//                   <div className="feature_3rir">
+//                     <h4>Our Company History</h4>
+//                     <p className="mb-0">
+//                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.
+//                     </p>
+//                   </div>
+//                 </div>
+//               </div>
+//               <div className="feature_3ri row mt-4">
+//                 <div className="col-md-1 col-sm-1 pe-0">
+//                   <div className="feature_3ril">
+//                     <span className="fs-2 col_red align-middle">
+//                       <i className="fa fa-bar-chart" />
+//                     </span>
+//                   </div>
+//                 </div>
+//                 <div className="col-md-11 col-sm-11">
+//                   <div className="feature_3rir">
+//                     <h4>Our Success Mission</h4>
+//                     <p className="mb-0">
+//                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.
+//                     </p>
+//                   </div>
+//                 </div>
+//               </div>
+//               <div className="feature_3ri row mt-4">
+//                 <div className="col-md-1 col-sm-1 pe-0">
+//                   <div className="feature_3ril">
+//                     <span className="fs-2 col_red align-middle">
+//                       <i className="fa fa-recycle" />
+//                     </span>
+//                   </div>
+//                 </div>
+//                 <div className="col-md-11 col-sm-11">
+//                   <div className="feature_3rir">
+//                     <h4>Our Future Plan</h4>
+//                     <p className="mb-0">
+//                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.
+//                     </p>
+//                   </div>
+//                 </div>
+//               </div>
+//               <h6 className="mt-4">
+//                 Support <span className="pull-right">90%</span>
+//               </h6>
+//               <div className="progress-bar mt-3">
+//                 <div className="progress" style={{ width: '90%' }} />
+//               </div>
+//             </div>
+//           </div>
+//           <div className="col-md-6">
+//             <div className="feature_3l">
+//               <div className="grid clearfix">
+//                 <figure className="effect-jazz mb-0">
+//                   <a href="#">
+//                     <img src="public/assets/img/alldesings/26.webp" className="w-100" alt="abc" />
+//                   </a>
+//                 </figure>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+
+//     <section id="testim" className="p_3 bg-light">
+//   <div className="container-xl">
+//     <div className="proj_h1 row mb-4">
+//       <div className="col-md-8">
+//         <div className="proj_h1l">
+//           <h6 className="col_red fw-bold">TESTIMONIALS</h6>
+//           <h2 className="mb-0">
+//             OUR CUSTOMER <span className="fw-normal">WORDS</span>
+//           </h2>
+//         </div>
+//       </div>
+//       <div className="col-md-4">
+//         <div className="proj_h1r text-end mt-4">
+//           <h6 className="mb-0 fw-bold">
+//             <a href="#">
+//               More Reviews <i className="fa fa-long-arrow-right ms-1" />
+//             </a>
+//           </h6>
+//         </div>
+//       </div>
+//     </div>
+//     <div className="testim_1 row">
+//       <div className="col-md-4">
+//         <div className="testim_1i shadow_box position-relative bg-white">
+//           <div className="testim_1i1 text-center pt-5 pb-5 px-4">
+//             <h5>Lorem Porta</h5>
+//             <h6 className="text-muted mb-3">California</h6>
+//             <img src="public/assets/img/prising/men-1.webp" alt="abc" className="rounded-circle" />
+//             <p className="mt-3 mb-0">
+//               Your guys were great knowledgeable, well experienced, efficient
+//               and neat. A true to work with intexure.
+//             </p>
+//           </div>
+//           <div className="testim_1i2 position-absolute top-0">
+//             <span className="d-inline-block bg_red text-white p-3 fs-2">
+//               <i className="fa fa-quote-left" />
+//             </span>
+//           </div>
+//         </div>
+//       </div>
+//       <div className="col-md-4">
+//         <div className="testim_1i shadow_box position-relative bg-white">
+//           <div className="testim_1i1 text-center pt-5 pb-5 px-4">
+//             <h5>Nulla Amet</h5>
+//             <h6 className="text-muted mb-3">Los Angeles</h6>
+//             <img src="public/assets/img/prising/women-2.avif" alt="abc" className="rounded-circle" />
+//             <p className="mt-3 mb-0">
+//               Your guys were great knowledgeable, well experienced, efficient
+//               and neat. A true to work with intexure.
+//             </p>
+//           </div>
+//           <div className="testim_1i2 position-absolute top-0">
+//             <span className="d-inline-block bg_red text-white p-3 fs-2">
+//               <i className="fa fa-quote-left" />
+//             </span>
+//           </div>
+//         </div>
+//       </div>
+//       <div className="col-md-4">
+//         <div className="testim_1i shadow_box position-relative bg-white">
+//           <div className="testim_1i1 text-center pt-5 pb-5 px-4">
+//             <h5>Dolor Ipsum</h5>
+//             <h6 className="text-muted mb-3">Newyork City</h6>
+//             <img src="public/assets/team/team-2.jpg" alt="abc" className="rounded-circle" />
+//             <p className="mt-3 mb-0">
+//               Your guys were great knowledgeable, well experienced, efficient
+//               and neat. A true to work with intexure.
+//             </p>
+//           </div>
+//           <div className="testim_1i2 position-absolute top-0">
+//             <span className="d-inline-block bg_red text-white p-3 fs-2">
+//               <i className="fa fa-quote-left" />
+//             </span>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </section>
+
+
+// <section id="team" className="p_3">
+//   <div className="container-xl">
+//     <div className="proj_h1 row mb-4">
+//       <div className="col-md-8">
+//         <div className="proj_h1l">
+//           <h6 className="col_red fw-bold">BEHIND OUR COMPANY</h6>
+//           <h2 className="mb-0">
+//             EXPERT &amp; EXPERINCED <span className="fw-normal">TEAM</span>
+//           </h2>
+//         </div>
+//       </div>
+//       <div className="col-md-4">
+//         <div className="proj_h1r mt-4 text-end">
+//           <h6 className="mb-0 fw-bold">
+//             <a href="#">
+//               All Members <i className="fa fa-long-arrow-right ms-1" />
+//             </a>
+//           </h6>
+//         </div>
+//       </div>
+//     </div>
+//     <div className="team_1 row">
+//       <div className="col-md-3 col-sm-6">
+//         <div className="team_1im">
+//           <div className="team_1im1 position-relative">
+//             <div className="team_1im1i">
+//               <div className="grid clearfix">
+//                 <figure className="effect-jazz mb-0">
+//                   <a href="#">
+//                     <img src="img/20.jpg" className="w-100" alt="abc" />
+//                   </a>
+//                 </figure>
+//               </div>
+//             </div>
+//             <div className="team_1im1i1 text-center position-absolute w-100 h-100 top-0">
+//               <h6 className="mb-0 fw-bold">
+//                 <a className="text-white" href="#">
+//                   View Profile <i className="fa fa-long-arrow-right ms-1" />
+//                 </a>
+//               </h6>
+//             </div>
+//             <div className="team_1im1i2 position-absolute w-100  pt-3 pb-3 text-center top-0">
+//               <ul className="social-network social-circle mb-0">
+//                 <li>
+//                   <a href="#" className="icoFacebook" title="Facebook">
+//                     <i className="fa fa-facebook" />
+//                   </a>
+//                 </li>
+//                 <li>
+//                   <a href="#" className="icoGoogle" title="Google +">
+//                     <i className="fa fa-pinterest" />
+//                   </a>
+//                 </li>
+//                 <li>
+//                   <a href="#" className="icoLinkedin" title="Linkedin">
+//                     <i className="fa fa-linkedin" />
+//                   </a>
+//                 </li>
+//                 <li>
+//                   <a href="#" className="icoRss" title="Rss">
+//                     <i className="fa fa-dribbble" />
+//                   </a>
+//                 </li>
+//               </ul>
+//             </div>
+//           </div>
+//           <div className="team_1im2 text-center shadow_box p-4">
+//             <h6 className="text-muted">CEO &amp; Founder</h6>
+//             <h5 className="mb-0">Lorem Amet</h5>
+//           </div>
+//         </div>
+//       </div>
+//       <div className="col-md-3 col-sm-6">
+//         <div className="team_1im">
+//           <div className="team_1im1 position-relative">
+//             <div className="team_1im1i">
+//               <div className="grid clearfix">
+//                 <figure className="effect-jazz mb-0">
+//                   <a href="#">
+//                     <img src="img/21.jpg" className="w-100" alt="abc" />
+//                   </a>
+//                 </figure>
+//               </div>
+//             </div>
+//             <div className="team_1im1i1 text-center position-absolute w-100 h-100 top-0">
+//               <h6 className="mb-0 fw-bold">
+//                 <a className="text-white" href="#">
+//                   View Profile <i className="fa fa-long-arrow-right ms-1" />
+//                 </a>
+//               </h6>
+//             </div>
+//             <div className="team_1im1i2 position-absolute w-100  pt-3 pb-3 text-center top-0">
+//               <ul className="social-network social-circle mb-0">
+//                 <li>
+//                   <a href="#" className="icoFacebook" title="Facebook">
+//                     <i className="fa fa-facebook" />
+//                   </a>
+//                 </li>
+//                 <li>
+//                   <a href="#" className="icoGoogle" title="Google +">
+//                     <i className="fa fa-pinterest" />
+//                   </a>
+//                 </li>
+//                 <li>
+//                   <a href="#" className="icoLinkedin" title="Linkedin">
+//                     <i className="fa fa-linkedin" />
+//                   </a>
+//                 </li>
+//                 <li>
+//                   <a href="#" className="icoRss" title="Rss">
+//                     <i className="fa fa-dribbble" />
+//                   </a>
+//                 </li>
+//               </ul>
+//             </div>
+//           </div>
+//           <div className="team_1im2 text-center shadow_box p-4">
+//             <h6 className="text-muted">Manager</h6>
+//             <h5 className="mb-0">Eget Porta</h5>
+//           </div>
+//         </div>
+//       </div>
+//       <div className="col-md-3 col-sm-6">
+//         <div className="team_1im">
+//           <div className="team_1im1 position-relative">
+//             <div className="team_1im1i">
+//               <div className="grid clearfix">
+//                 <figure className="effect-jazz mb-0">
+//                   <a href="#">
+//                     <img src="img/22.jpg" className="w-100" alt="abc" />
+//                   </a>
+//                 </figure>
+//               </div>
+//             </div>
+//             <div className="team_1im1i1 text-center position-absolute w-100 h-100 top-0">
+//               <h6 className="mb-0 fw-bold">
+//                 <a className="text-white" href="#">
+//                   View Profile <i className="fa fa-long-arrow-right ms-1" />
+//                 </a>
+//               </h6>
+//             </div>
+//             <div className="team_1im1i2 position-absolute w-100  pt-3 pb-3 text-center top-0">
+//               <ul className="social-network social-circle mb-0">
+//                 <li>
+//                   <a href="#" className="icoFacebook" title="Facebook">
+//                     <i className="fa fa-facebook" />
+//                   </a>
+//                 </li>
+//                 <li>
+//                   <a href="#" className="icoGoogle" title="Google +">
+//                     <i className="fa fa-pinterest" />
+//                   </a>
+//                 </li>
+//                 <li>
+//                   <a href="#" className="icoLinkedin" title="Linkedin">
+//                     <i className="fa fa-linkedin" />
+//                   </a>
+//                 </li>
+//                 <li>
+//                   <a href="#" className="icoRss" title="Rss">
+//                     <i className="fa fa-dribbble" />
+//                   </a>
+//                 </li>
+//               </ul>
+//             </div>
+//           </div>
+//           <div className="team_1im2 text-center shadow_box p-4">
+//             <h6 className="text-muted">Architect</h6>
+//             <h5 className="mb-0">Dolor Sed</h5>
+//           </div>
+//         </div>
+//       </div>
+//       <div className="col-md-3 col-sm-6">
+//         <div className="team_1im">
+//           <div className="team_1im1 position-relative">
+//             <div className="team_1im1i">
+//               <div className="grid clearfix">
+//                 <figure className="effect-jazz mb-0">
+//                   <a href="#">
+//                     <img src="img/23.jpg" className="w-100" alt="abc" />
+//                   </a>
+//                 </figure>
+//               </div>
+//             </div>
+//             <div className="team_1im1i1 text-center position-absolute w-100 h-100 top-0">
+//               <h6 className="mb-0 fw-bold">
+//                 <a className="text-white" href="#">
+//                   View Profile <i className="fa fa-long-arrow-right ms-1" />
+//                 </a>
+//               </h6>
+//             </div>
+//             <div className="team_1im1i2 position-absolute w-100  pt-3 pb-3 text-center top-0">
+//               <ul className="social-network social-circle mb-0">
+//                 <li>
+//                   <a href="#" className="icoFacebook" title="Facebook">
+//                     <i className="fa fa-facebook" />
+//                   </a>
+//                 </li>
+//                 <li>
+//                   <a href="#" className="icoGoogle" title="Google +">
+//                     <i className="fa fa-pinterest" />
+//                   </a>
+//                 </li>
+//                 <li>
+//                   <a href="#" className="icoLinkedin" title="Linkedin">
+//                     <i className="fa fa-linkedin" />
+//                   </a>
+//                 </li>
+//                 <li>
+//                   <a href="#" className="icoRss" title="Rss">
+//                     <i className="fa fa-dribbble" />
+//                   </a>
+//                 </li>
+//               </ul>
+//             </div>
+//           </div>
+//           <div className="team_1im2 text-center shadow_box p-4">
+//             <h6 className="text-muted">Designer</h6>
+//             <h5 className="mb-0">Augue Quis</h5>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </section>
+
+
+
+  
+
+
+    
     <>
+    <div className="slider-area2" style={{ backgroundColor: '#12151A' }}>
+  <div className="slider-height2 hero-overly d-flex align-items-center">
+    <div className="container">
+      <div className="row">
+        <div className="col-xl-12">
+          <div className="hero-cap hero-cap2 text-center pt-80">
+            <h2>About Us</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       <main>
         {/* Our Info Start */}
         <section className="our-info custom-section-padding">
@@ -35,7 +515,7 @@ const About = () => {
                   <span>Our Professional Services</span>
                   <h2>Creating Exceptional Spaces with Attention to Detail</h2>
                   <p>
-                    At [Your Company Name], we offer a range of interior design services tailored to meet your specific needs. From concept development to final execution, we ensure every detail is perfect.
+                    At MkInteriors, we offer a range of interior design services tailored to meet your specific needs. From concept development to final execution, we ensure every detail is perfect.
                   </p>
                   <p>
                     Our services include space planning, custom furniture design, color consultations, and complete interior makeovers. We work closely with you to create a space that reflects your personality and lifestyle.
@@ -43,11 +523,12 @@ const About = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6">
-                <a href="contact.html" className="btn btn-primary">
-                  Get in Touch
-                </a>
+                <Link to={'/contact'} className="btn btn-black f-right" >
+                Get in Touch
+                </Link>
+              
               </div>
-            </div>
+            </div>  
           </div>
         </div>
         {/* Professional Services End */}
@@ -69,7 +550,7 @@ const About = () => {
               <div className="col-xl-4 col-lg-4 col-md-6">
                 <div className="single-team mb-30">
                   <div className="team-img">
-                    <img src="assets/img/team/john-smith.jpg" alt="John Smith" />
+                    <img src="public/assets/img/team/1.png" alt="John Smith" />
                   </div>
                   <div className="team-caption">
                     <h3>
@@ -82,7 +563,7 @@ const About = () => {
               <div className="col-xl-4 col-lg-4 col-md-6">
                 <div className="single-team mb-30">
                   <div className="team-img">
-                    <img src="assets/img/team/jane-doe.jpg" alt="Jane Doe" />
+                    <img src="public/assets/img/team/3.png" alt="Jane Doe" />
                   </div>
                   <div className="team-caption">
                     <h3>
@@ -95,7 +576,7 @@ const About = () => {
               <div className="col-xl-4 col-lg-4 col-md-6">
                 <div className="single-team mb-30">
                   <div className="team-img">
-                    <img src="assets/img/team/emily-johnson.jpg" alt="Emily Johnson" />
+                    <img src="public/assets/img/team/2.png" alt="Emily Johnson" />
                   </div>
                   <div className="team-caption">
                     <h3>
@@ -110,168 +591,14 @@ const About = () => {
         </div>
         {/* Team End */}
 
-        {/* Testimonial Start */}
-        <div className="testimonial-area testimonial-padding">
-          <div className="container">
-            <div className="row d-flex justify-content-center">
-              <div className="col-xl-8 col-lg-8 col-md-10">
-                <div className="h1-testimonial-active dot-style">
-                  {/* Single Testimonial */}
-                  <div className="single-testimonial text-center">
-                    <div className="testimonial-caption">
-                      <div className="testimonial-top-cap">
-                        <img src="assets/img/testimonial-logo.png" alt="Testimonial Logo" />
-                        <p>
-                          "Working with [Your Company Name] was a fantastic experience. Their attention to detail and creativity transformed our office space into a modern and functional environment."
-                        </p>
-                      </div>
-                      <div className="testimonial-founder">
-                        <div className="founder-img">
-                          <span>
-                            <strong>Michael Lee</strong> - CEO, XYZ Corp
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Single Testimonial */}
-                  <div className="single-testimonial text-center">
-                    <div className="testimonial-caption">
-                      <div className="testimonial-top-cap">
-                        <img src="assets/img/testimonial-logo.png" alt="Testimonial Logo" />
-                        <p>
-                          "The team at [Your Company Name] exceeded our expectations. They created a home that perfectly matches our style and needs. Highly recommended!"
-                        </p>
-                      </div>
-                      <div className="testimonial-founder">
-                        <div className="founder-img">
-                          <span>
-                            <strong>Laura Adams</strong> - Homeowner
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Testimonial End */}
+      
 
-        {/* Brand Area Start */}
-        <div className="brand-area pt-120 pb-120">
-          <div className="container">
-            <div className="brand-active brand-border pt-50 pb-40">
-              <div className="single-brand">
-                <img src="assets/img/brands/brand1.png" alt="Brand 1" />
-              </div>
-              <div className="single-brand">
-                <img src="assets/img/brands/brand2.png" alt="Brand 2" />
-              </div>
-              <div className="single-brand">
-                <img src="assets/img/brands/brand3.png" alt="Brand 3" />
-              </div>
-              <div className="single-brand">
-                <img src="assets/img/brands/brand4.png" alt="Brand 4" />
-              </div>
-              <div className="single-brand">
-                <img src="assets/img/brands/brand5.png" alt="Brand 5" />
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Brand Area End */}
 
         {/* Want To Work Start */}
-        <section className="wantToWork-area w-padding2">
-          <div className="container">
-            <div className="row align-items-center justify-content-between">
-              <div className="col-xl-8 col-lg-8 col-md-8">
-                <div className="wantToWork-caption wantToWork-caption2">
-                  <h2>Looking for an Exceptional Interior Design Experience?</h2>
-                </div>
-              </div>
-              <div className="col-xl-2 col-lg-2 col-md-3">
-                <a href="contact.html" className="btn btn-black f-right">
-                  Contact Us
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+    <Banner/>
         {/* Want To Work End */}
 
-        {/* Blog Area Start */}
-        <div className="home-blog-area section-padding30">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-tittle text-center mb-70">
-                  <span>Our Latest Blog</span>
-                  <h2>Insights & Inspiration</h2>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-xl-6 col-lg-6 col-md-6">
-                <div className="home-blog-single mb-30">
-                  <div className="blog-img-cap">
-                    <div className="blog-img">
-                      <img src="assets/img/blog/blog1.png" alt="Blog 1" />
-                    </div>
-                    <ul>
-                      <li className="black">
-                        <i className="fas fa-calendar-alt"></i>
-                        March 10, 2024
-                      </li>
-                      <li>
-                        <i className="fas fa-user"></i>
-                        John Smith
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="blog-caption">
-                    <h3>
-                      <a href="#">5 Tips for a Modern Living Room Makeover</a>
-                    </h3>
-                    <p>
-                      Discover how to give your living room a contemporary touch with these simple design tips.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-6 col-lg-6 col-md-6">
-                <div className="home-blog-single mb-30">
-                  <div className="blog-img-cap">
-                    <div className="blog-img">
-                      <img src="assets/img/blog/blog2.png" alt="Blog 2" />
-                    </div>
-                    <ul>
-                      <li className="black">
-                        <i className="fas fa-calendar-alt"></i>
-                        March 15, 2024
-                      </li>
-                      <li>
-                        <i className="fas fa-user"></i>
-                        Jane Doe
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="blog-caption">
-                    <h3>
-                      <a href="#">Maximizing Small Spaces: Design Hacks</a>
-                    </h3>
-                    <p>
-                      Learn how to make the most of limited space with these effective design solutions.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Blog Area End */}
+    
       </main>
     </>
   );

@@ -1,20 +1,22 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { CiFacebook } from "react-icons/ci";
+import { CiTwitter } from "react-icons/ci";
+import { CiInstagram } from "react-icons/ci";
 const Team = () => {
     return (
         <>
-            <section className="pt-[120px] pb-[90px]">
+            <section className="pt-[120px] pb-[90px]" style={{ backgroundColor: '#12151A' }}>
                 <div className="container mx-auto">
                     <div className="flex justify-between mb-8">
                         <div className="text-left">
                             <span className="text-lg text-gray-600">Our Team</span>
-                            <h2 className="text-3xl font-bold">Meet our team</h2>
+                            <h2 className="text-3xl font-bold text-white">Meet our team</h2>
                         </div>
                         <div className="text-right">
                             <Link
-                                to="/view-all" // Navigate to /view-all route
-                                className="primary-btn normal-btn text-white bg-yellow-500 px-4 py-2 rounded-lg"
+                                to="/view-all"
+                                className="btn btn-black f-right"
                             >
                                 View All
                             </Link>
@@ -32,13 +34,13 @@ const Team = () => {
                                     Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur.
                                 </p>
                                 <div className="flex justify-center space-x-4 mt-4">
-                                    <a href="#" className="text-white hover:text-yellow-500 transition duration-300">
+                                    <a href="#" className="btn btn-black f-right">
                                         <i className="fa fa-facebook"></i>
                                     </a>
-                                    <a href="#" className="text-white hover:text-yellow-500 transition duration-300">
+                                    <a href="#" className="btn btn-black f-right">
                                         <i className="fa fa-twitter"></i>
                                     </a>
-                                    <a href="#" className="text-white hover:text-yellow-500 transition duration-300">
+                                    <a href="#" className="btn btn-black f-right">
                                         <i className="fa fa-instagram"></i>
                                     </a>
                                 </div>
@@ -55,13 +57,13 @@ const Team = () => {
                                     Donec accumsan quam vitae sapien volutpat. Phasellus consequat sem eget diam varius elementum.
                                 </p>
                                 <div className="flex justify-center space-x-4 mt-4">
-                                    <a href="#" className="text-white hover:text-yellow-500 transition duration-300">
+                                    <a href="#" className="btn btn-black f-right">
                                         <i className="fa fa-facebook"></i>
                                     </a>
-                                    <a href="#" className="text-white hover:text-yellow-500 transition duration-300">
+                                    <a href="#" className="btn btn-black f-right">
                                         <i className="fa fa-twitter"></i>
                                     </a>
-                                    <a href="#" className="text-white hover:text-yellow-500 transition duration-300">
+                                    <a href="#" className="btn btn-black f-right">
                                         <i className="fa fa-instagram"></i>
                                     </a>
                                 </div>
@@ -78,23 +80,19 @@ const Team = () => {
                                     Curabitur dictum elit nec sapien faucibus, quis placerat ligula molestie.
                                 </p>
                                 <div className="flex justify-center space-x-4 mt-4">
-                                    <a href="#" className="text-white hover:text-yellow-500 transition duration-300">
-                                        <i className="fa fa-facebook"></i>
-                                    </a>
-                                    <a href="#" className="text-white hover:text-yellow-500 transition duration-300">
-                                        <i className="fa fa-twitter"></i>
-                                    </a>
-                                    <a href="#" className="text-white hover:text-yellow-500 transition duration-300">
-                                        <i className="fa fa-instagram"></i>
-                                    </a>
+                                  <CiFacebook/>
+                                  <CiTwitter/>
+                                <CiInstagram/>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </>
-    )
-}
+    );
+};
 
-export default Team
+export default Team;

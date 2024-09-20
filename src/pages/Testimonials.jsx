@@ -81,28 +81,21 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-24">
+    <section className="py-24" style={{ backgroundColor: '#12151A' }}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
           <span className="text-sm text-gray-500 font-medium block mb-2">TESTIMONIAL</span>
-          <h2 className="text-4xl font-bold text-gray-900">What our happy users say!</h2>
+          <h2 className="text-4xl font-bold text-white">What our happy users say!</h2> {/* Updated color */}
         </div>
 
         <Swiper
           spaceBetween={30}
-          slidesPerView={3} // Show 3 slides at once
+          slidesPerView={3}
           pagination={{ clickable: true }}
-       
           breakpoints={{
-            640: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
           }}
           className="mySwiper"
         >

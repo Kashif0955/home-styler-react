@@ -4,25 +4,25 @@ import React, { useState, useEffect } from 'react';
 const Slider = () => {
   const slides = [
     {
-      imgSrc: 'public/assets/img/hero/6.jpg',
-      imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',
-      title: 'Front end developers',
-      description: 'The architects of the digital world, constantly battling against their mortal enemy – browser compatibility.',
-    },
-    {
-      imgSrc: 'public/assets/img/hero/6.jpg',
-      imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',
-      title: 'Back end developers',
-      description: 'Because not all superheroes wear capes, some wear headphones and stare at terminal screens',
+      imgSrc: 'public/assets/img/hero/5.jpg',
+      imgAlt: 'Modern living room with vibrant decor, showcasing a stylish sofa and a well-lit interior.',
+      title: 'Living Room Designs',
+      description: 'Transform your living space into a cozy haven with our stunning interior designs.',
     },
     {
       imgSrc: 'public/assets/img/hero/3.jpg',
-      imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',
-      title: 'Full stack developers',
-      description: 'Where "burnout" is just a fancy term for "Tuesday".',
+      imgAlt: 'Contemporary kitchen design with sleek cabinetry and elegant lighting fixtures.',
+      title: 'Kitchen Makeovers',
+      description: 'Discover modern and functional kitchen designs to elevate your culinary space.',
+    },
+    {
+      imgSrc: 'public/assets/img/hero/1.jpg',
+      imgAlt: 'Serene bedroom with soft lighting, minimal decor, and a luxurious bed setup.',
+      title: 'Bedroom Inspirations',
+      description: 'Create the perfect retreat with elegant bedroom designs that speak comfort and style.',
     },
   ];
-
+  
   const [currentSlideIndex, setCurrentSlideIndex] = useState(1);
 
   useEffect(() => {

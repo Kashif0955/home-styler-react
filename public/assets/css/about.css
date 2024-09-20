@@ -1,62 +1,254 @@
-.professional-services {
-    height: 800px;
-    width: 100%;
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    color: #333;
 }
 
+h2.section-title {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
+p.section-description {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.7;
+}
 
-@media (max-width: 768px) { /* Assuming #{$md} is 768px */
-    .professional-services {
-        height: 654px;
-    }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Professional Services */
+.professional-services {
+    height: auto;
+    width: 100%;
+    padding: 60px 0;
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    color: white;
 }
 
 .profession-caption {
-    margin-top: -418px;
+    margin-top: 0;
 }
 
-@media (max-width: 768px) { /* Assuming #{$md} is 768px */
-    .profession-caption {
-        margin-top: -500px;
-    }
+.profession-caption .profession-details {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 576px) { /* Assuming #{$sm} is 576px */
-    .profession-caption {
-        margin-top: 0px;
-    }
-
-    .profession-caption .profession-details {
-        padding: 30px;
-    }
-
-    .profession-caption .profession-details h2 {
-        font-size: 23px;
-    }
-
-    .profession-caption .profession-details p {
-        font-size: 17px;
-    }
+.profession-caption h2 {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
 }
 
-@media (max-width: 320px) { /* Assuming #{$xs} is 320px */
-    .profession-caption {
-        margin-top: 0px;
-    }
-
-    .profession-caption .profession-details {
-        padding: 30px;
-    }
-
-    .profession-caption .profession-details h2 {
-        font-size: 23px;
-    }
-
-    .profession-caption .profession-details p {
-        font-size: 17px;
-    }
+.profession-caption p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
 }
 
-.body-bg {
+/* .btn-primary {
+    padding: 12px 30px;
+    background: #ff5f6d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s;
+} */
+
+/* .btn-primary:hover {
+    background: #ffc371;
+} */
+
+/* Team Section */
+.team-area {
+    background: #f9f9f9;
+    padding: 80px 0;
+}
+
+.team-caption {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.team-caption h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.team-caption span {
+    font-size: 16px;
+    color: #777;
+}
+
+.team-img img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonial-area {
     background: #12151a;
+    color: white;
+    padding: 80px 0;
+}
+
+.testimonial-caption p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+
+.testimonial-founder strong {
+    font-size: 16px;
+    color: #ff5f6d;
+}
+
+/* Blog Section */
+.home-blog-area {
+    background: #f9f9f9;
+    padding: 80px 0;
+}
+
+.blog-caption h3 a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.blog-caption h3 a:hover {
+    color: #ff5f6d;
+}
+
+.blog-caption p {
+    font-size: 16px;
+    color: #666;
+}
+
+.blog-img img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Brand Area */
+.brand-area {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.single-brand img {
+    max-width: 100px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.single-brand img:hover {
+    opacity: 1;
+}
+
+/* Want To Work Section */
+.wantToWork-area {
+background-color: #B91C1C !important   ;
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+}
+
+.wantToWork-caption h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn-primary {
+    padding: 12px 30px;
+    background: #ff5f6d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #ffc371;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-black {
+    padding: 20px 30px !important;
+    background: black;
+    padding: 15px;
+    color: white;
+    border-radius: 2px !important;
+    outline: none;
+    border: none !important;
+ 
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.btn-black:hover {
+    background: white;
+    color: black;
+    border: 2px solid black;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h2.section-title {
+        font-size: 28px;
+    }
+    p.section-description {
+        font-size: 16px;
+    }
+    .profession-caption {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profession-caption {
+        margin-top: 10px;
+    }
+    .profession-caption .profession-details h2 {
+        font-size: 20px;
+    }
+    .profession-caption .profession-details p {
+        font-size: 14px;
+    }
 }

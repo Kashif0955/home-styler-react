@@ -3792,12 +3792,16 @@ justify-content: center;
 
 
 /* line 19, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_wantTowork.scss */
+
+.wantToWork-area {
+  background-color: red !important ;
+}
 .wantToWork-area .wantToWork-caption p {
   font-size: 18px;
 } 
 
 .wantToWork-area {
-  background: linear-gradient(135deg, rgb(79, 17, 4), rgba(82, 7, 9, 0.874)), url('https://example.com/your-background-image.jpg');
+  /* background: linear-gradient(135deg, rgb(79, 17, 4), rgba(82, 7, 9, 0.874)), url('https://example.com/your-background-image.jpg'); */
   background-size: cover;
   background-position: center;
   color: #9b1515; /* Ensures text is readable */
@@ -3846,6 +3850,7 @@ justify-content: center;
 
 .single-gallery {
   margin-bottom: 30px;
+  
 }
 
 .single-gallery .content {
