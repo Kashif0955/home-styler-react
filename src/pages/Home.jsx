@@ -13,6 +13,9 @@ import FunFacts from './OdoMeter';
 const Home = () => {
   return (
     <>
+    <div className='main ' style={{
+      background:"#12151A"
+    }}>
       <Header />
       <Slider />
       <Services />
@@ -25,6 +28,7 @@ const Home = () => {
       <Banner />
 
       <Blog/>
+      </div>
     </>
   );
 };

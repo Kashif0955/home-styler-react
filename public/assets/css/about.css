@@ -176,9 +176,8 @@ a {
 
 /* Want To Work Section */
 .wantToWork-area {
-background-color: #B91C1C !important   ;
     padding: 60px 0;
-    color: white;
+    color: rgb(23, 8, 8);
     text-align: center;
 }
 

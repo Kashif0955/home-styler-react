@@ -34,11 +34,11 @@ const Gallery = () => {
                       style={{ objectFit: 'cover', height: '100%', width: '100%' }}
                     />
                   </a>
-                  <div className="content-details fadeIn-bottom">
+                  <div className="content-details fadeIn-bottom text-center">
                     <Link to="/project-details">
                       <h3 className="content-title mx-auto">Lavendar ambient interior</h3>
                     </Link>
-                    <Link to="/project-details" className="primary-btn text-uppercase mt-20">
+                    <Link to="/project-details" className="primary-btn text-uppercase btn btn-black mt-20 hover-btn">
                       More Details
                     </Link>
                   </div>
@@ -58,11 +58,11 @@ const Gallery = () => {
                       style={{ objectFit: 'cover', height: '100%', width: '100%' }}
                     />
                   </a>
-                  <div className="content-details fadeIn-bottom">
+                  <div className="content-details fadeIn-bottom text-center">
                     <Link to="/project-details">
                       <h3 className="content-title mx-auto">Ambient interior</h3>
                     </Link>
-                    <Link to="/project-details" className="primary-btn text-uppercase mt-20">
+                    <Link to="/project-details" className="primary-btn text-uppercase btn btn-black mt-20 hover-btn">
                       More Details
                     </Link>
                   </div>
@@ -82,11 +82,11 @@ const Gallery = () => {
                       style={{ objectFit: 'cover', height: '100%', width: '100%' }}
                     />
                   </a>
-                  <div className="content-details fadeIn-bottom">
+                  <div className="content-details fadeIn-bottom text-center">
                     <Link to="/project-details">
                       <h3 className="content-title mx-auto">Ambient interior</h3>
                     </Link>
-                    <Link to="/project-details" className="primary-btn text-uppercase mt-20">
+                    <Link to="/project-details" className="primary-btn text-uppercase btn btn-black mt-20 hover-btn">
                       More Details
                     </Link>
                   </div>
@@ -106,11 +106,11 @@ const Gallery = () => {
                       style={{ objectFit: 'cover', height: '100%', width: '100%' }}
                     />
                   </a>
-                  <div className="content-details fadeIn-bottom">
+                  <div className="content-details fadeIn-bottom text-center">
                     <Link to="/project-details">
                       <h3 className="content-title mx-auto">Lavendar ambient interior</h3>
                     </Link>
-                    <Link to="/all-designs" className="primary-btn text-uppercase mt-20">
+                    <Link to="/all-designs" className="primary-btn text-uppercase btn btn-black mt-20 hover-btn">
                       More Details
                     </Link>
                   </div>
@@ -120,11 +120,22 @@ const Gallery = () => {
           </div>
           {/* View Project Button for All Cards */}
           <div className="text-center mt-4">
-            <Link to="/all-designs" className="primary-btn text-uppercase">
+            <Link to="/all-designs" className="primary-btn text-uppercase btn btn-black hover-btn">
               View All Projects
             </Link>
           </div>
         </div>
+
+        <style jsx>{`
+          .hover-btn {
+            color: white;
+            border: 2px solid transparent;
+          }
+          .hover-btn:hover {
+            color: black;
+            border-color: white;
+          }
+        `}</style>
       </section>
     </>
   );

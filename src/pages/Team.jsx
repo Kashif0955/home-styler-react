@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CiFacebook } from "react-icons/ci";
-import { CiTwitter } from "react-icons/ci";
-import { CiInstagram } from "react-icons/ci";
+import { CiFacebook, CiTwitter, CiInstagram } from "react-icons/ci";
+
 const Team = () => {
     return (
         <>
@@ -34,14 +33,14 @@ const Team = () => {
                                     Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur.
                                 </p>
                                 <div className="flex justify-center space-x-4 mt-4">
-                                    <a href="#" className="btn btn-black f-right">
-                                        <i className="fa fa-facebook"></i>
+                                    <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                                        <CiFacebook size={24} />
                                     </a>
-                                    <a href="#" className="btn btn-black f-right">
-                                        <i className="fa fa-twitter"></i>
+                                    <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                                        <CiTwitter size={24} />
                                     </a>
-                                    <a href="#" className="btn btn-black f-right">
-                                        <i className="fa fa-instagram"></i>
+                                    <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                                        <CiInstagram size={24} />
                                     </a>
                                 </div>
                             </div>
@@ -57,14 +56,14 @@ const Team = () => {
                                     Donec accumsan quam vitae sapien volutpat. Phasellus consequat sem eget diam varius elementum.
                                 </p>
                                 <div className="flex justify-center space-x-4 mt-4">
-                                    <a href="#" className="btn btn-black f-right">
-                                        <i className="fa fa-facebook"></i>
+                                    <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                                        <CiFacebook size={24} />
                                     </a>
-                                    <a href="#" className="btn btn-black f-right">
-                                        <i className="fa fa-twitter"></i>
+                                    <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                                        <CiTwitter size={24} />
                                     </a>
-                                    <a href="#" className="btn btn-black f-right">
-                                        <i className="fa fa-instagram"></i>
+                                    <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                                        <CiInstagram size={24} />
                                     </a>
                                 </div>
                             </div>
@@ -80,12 +79,16 @@ const Team = () => {
                                     Curabitur dictum elit nec sapien faucibus, quis placerat ligula molestie.
                                 </p>
                                 <div className="flex justify-center space-x-4 mt-4">
-                                  <CiFacebook/>
-                                  <CiTwitter/>
-                                <CiInstagram/>
+                                    <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                                        <CiFacebook size={24} />
+                                    </a>
+                                    <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                                        <CiTwitter size={24} />
+                                    </a>
+                                    <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                                        <CiInstagram size={24} />
+                                    </a>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>

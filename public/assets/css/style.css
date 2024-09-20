@@ -3794,7 +3794,7 @@ justify-content: center;
 /* line 19, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_wantTowork.scss */
 
 .wantToWork-area {
-  background-color: red !important ;
+  background-color: #e1b54e !important ;
 }
 .wantToWork-area .wantToWork-caption p {
   font-size: 18px;
@@ -3804,8 +3804,13 @@ justify-content: center;
   /* background: linear-gradient(135deg, rgb(79, 17, 4), rgba(82, 7, 9, 0.874)), url('https://example.com/your-background-image.jpg'); */
   background-size: cover;
   background-position: center;
-  color: #9b1515; /* Ensures text is readable */
+  color: black; /* Ensures text is readable */
   padding: 60px 0;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .wantToWork-caption {
@@ -3816,6 +3821,7 @@ justify-content: center;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.815) !important;
 }
 
 
@@ -3850,7 +3856,6 @@ justify-content: center;
 
 .single-gallery {
   margin-bottom: 30px;
-  
 }
 
 .single-gallery .content {
@@ -3866,9 +3871,9 @@ justify-content: center;
   padding: 10px;
   color: black;
   text-align: center;
-  text-decoration: none; /* Ensures button text is not underlined */
-  display: inline-block; /* Allows padding to take effect */
-  font-weight: bold; /* Makes button text bold */
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
 }
 
 @media (max-width: 414px) {
@@ -3886,7 +3891,7 @@ justify-content: center;
   right: 0;
   opacity: 0;
   border-radius: 10px;
-  border: 1px solid #C6B069; /* Updated border color */
+  border: 1px solid #C6B069;
   transition: all 0.4s ease-in-out;
 }
 
@@ -3901,7 +3906,9 @@ justify-content: center;
 }
 
 .single-gallery .content:hover .content-overlay {
-  opacity: 0.8;
+  opacity: 0.8; /* You can adjust this if you want it more opaque */
+  background-color: rgba(15, 15, 15, 0.422); /* Change background on hover */
+  border: 1px solid white; /* Change border color to white on hover */
 }
 
 .single-gallery .content-details {
@@ -3919,9 +3926,9 @@ justify-content: center;
 
 .single-gallery .content-title {
   width: 60%;
-  border-bottom: 1px solid #C6B069; /* Updated border color */
+  border-bottom: 1px solid #e3e3d9;
   font-size: 18px;
-  color: #ffffff; /* White color */
+  color: #ffffff;
   font-weight: 500;
   padding: 20px 0;
 }
@@ -3951,6 +3958,11 @@ justify-content: center;
 .single-gallery .fadeIn-bottom {
   top: 80%;
 }
+
+.gallery-area {
+  margin-top: 80px;
+}
+
 
 
 
@@ -8045,3 +8057,18 @@ del {
   margin-bottom: 1.5rem; /* Margin below paragraphs */
   text-align: justify; /* Justify text for a clean look */
 }
+
+.fun-fact-card {
+  background-color: #e1b54e; /* Your existing background color */
+  padding: 20px; /* Add some padding */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.fun-fact-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+
+

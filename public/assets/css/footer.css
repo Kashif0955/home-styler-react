@@ -1,0 +1,155 @@
+.footer-area {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px; /* Increased horizontal padding */
+}
+
+.footer-logo img {
+  max-width: 150px; /* Adjust as needed */
+}
+
+.footer-top {
+  border-bottom: 1px solid #444; /* Added border for separation */
+  padding-bottom: 40px;
+}
+.footer-number > p {
+  color: white;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.footer-number > p:hover {
+  color: #FF1418 !important; /* Change to your desired hover color */
+}
+
+
+.footer-tittle h4 {
+  color: #f8c74e; /* Highlight color */
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.2rem; /* Slightly larger */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.footer-tittle h4:hover {
+  color: #FF1418 ;  /* Change to your desired hover color */
+}
+
+.footer-pera {
+  margin-bottom: 20px;
+  line-height: 1.5; /* Increase line height for readability */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f8c74e;
+}
+
+.instagram-gellay {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between images */
+  margin-top: 20px; /* Space above gallery */
+}
+
+.insta-feed {
+  display: flex;
+  justify-content: flex-start; /* Align images to the start */
+  flex-wrap: wrap; /* Wrap images on smaller screens */
+}
+
+.insta-feed li {
+  width: calc(33.33% - 10px); /* Three images per row with spacing */
+  position: relative; /* For hover effect */
+  overflow: hidden; /* To hide overflow on hover */
+  border-radius: 8px; /* Rounded corners for images */
+  transition: transform 0.3s; /* Smooth hover effect */
+  margin-bottom: 10px; /* Space below each image */
+}
+
+.insta-feed img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images cover the area */
+  transition: transform 0.3s; /* Smooth zoom effect */
+}
+
+.insta-feed li:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.insta-feed li:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align to the right */
+  margin-top: 10px; /* Space above social links */
+}
+
+.footer-social span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.footer-social a {
+  margin-left: 15px; /* Space between icons */
+  color: #fff;
+  transition: color 0.3s;
+  font-size: 1.3rem; /* Larger icons */
+}
+.instagram {
+  color: white;
+  margin: 1px; /* White color for Instagram */
+}
+
+.feed {
+  font-weight: 700;
+  color: #cf0d2a;
+  margin-left: 5px !important; 
+  /* transition: color 0.3s ease; */
+}
+
+/* .feed:hover {
+  color: #FF1418;
+} */
+
+
+
+.footer-social a:hover {
+  color: #f8c74e;
+}
+
+.footer-bottom {
+  padding: 20px 0; /* Add padding */
+}
+
+.footer-copy-right {
+  text-align: left;
+  font-size: 14px;
+}
+
+.footer-copy-right a {
+  color: #f8c74e;
+  text-decoration: none;
+}
+
+.footer-copy-right a:hover {
+  text-decoration: underline;
+}
